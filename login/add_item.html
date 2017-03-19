@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- META -->
+	<title>TvFinds | Add item</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="" />
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/kickstart.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../style.css" media="all" /> 
+	
+	<!-- Javascript -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/kickstart.js"></script>
+</head>
+<body>
+<div id="container" class="grid">
+	<header>
+		<div class="col_6 column">
+			<h1><a href="index.html"><strong>TV</strong>Finds</a></h1>
+		</div>
+		<div class="col_6 column right">
+			<form id="add_job_link" action="../index.html">
+              <button class="large green"></i>Log out</button>
+			</form>
+		</div>
+	</header>
+	
+	<div class="col_12 column">
+	<h5>Add item (Admin mode)</h5>
+		<!-- Menu Horizontal -->
+		<ul class="menu">
+		<li><a href="index.html"><i class="icon-home"></i> Admin Home</a></li>
+		<li class="current"><a href="jobs.html"><i class="icon-plus"></i> Add item</a></li>
+		</ul>
+	</div>
+
+		
+		<div class="col_12 column">
+			<form id="reg_form">
+			<div>
+			<fieldset>
+			<legend>Name and Genre</legend>
+				<p>
+					<label for="tv_show">TV show</label>
+					<input id="tv_show" name="tv_show" type="text" />
+				</p>
+				<p>
+					<label for="last_name">Genre</label>
+					<input id="last_name" name="last_name" type="text" />
+				</p>
+            </fieldset>
+            </div>
+            
+            <div>
+			<fieldset>
+			<legend>Categories</legend>
+				<p>
+					<label for="check1" class="inline">
+                    <input type="checkbox" id="check1" />
+                       Be amused
+                    </label>
+                    <br />
+                    <label for="check2" class="inline">
+                    <input type="checkbox" id="check2" />
+                       Be shocked
+                    </label>
+                    <br />
+                    <label for="check3" >
+                    <input type="checkbox" id="check3" />
+                       Feel comforted
+                    </label>
+                    <br />
+                    <label for="check4" class="inline">
+                    <input type="checkbox" id="check4" />
+                       Feel emotionally connected
+                    </label>
+                    <br />
+                    <label for="check5" class="inline">
+                    <input type="checkbox" id="check5" />
+                       Feel excited 
+                    </label>
+                    <br />
+                    <label for="check6" class="inline">
+                    <input type="checkbox" id="check6" />
+                       Feel intrigued 
+                    </label>
+                    <br />
+                    <label for="check7" class="inline">
+                    <input type="checkbox" id="check7" />
+                       Get to know interesting characters
+                    </label>
+                    <br />
+                    <label for="check8" class="inline">
+                    <input type="checkbox" id="check8" />
+                       Look at great art direction
+                    </label>
+                    <br />
+                    <label for="check9" >
+                    <input type="checkbox" id="check9" />
+                       Stimulate my mind
+                    </label>
+				</p>
+            </fieldset>
+            </div>
+            
+            <div>
+			<fieldset>
+			<legend>Watch it on</legend>
+				<p>
+				    <label for="check10" >
+                    <input type="checkbox" id="check10" />
+                       Foxtel  
+                    </label>
+                  
+                    <label for="check11" >
+                    <input type="checkbox" id="check11" />
+                       Netflix
+                    </label>
+                    
+                    <label for="check12" >
+                    <input type="checkbox" id="check12" />
+                       Google Play  
+                    </label>
+              
+                    <label for="check13" >
+                    <input type="checkbox" id="check13" />
+                       Stan
+                    </label>
+          
+                    <label for="check14" >
+                    <input type="checkbox" id="check14" />
+                       iTunes  
+                    </label>
+                    <label for="check15" >
+                    <input type="checkbox" id="check15" />
+                       DVD  
+                    </label>
+				</p>
+            </fieldset>
+            </div>
+            <div>
+            <fieldset>
+			<legend>Download it on</legend>
+				<p>
+				    <label for="check16" >
+                    <input type="checkbox" id="check16" />
+                       iTunes  
+                    </label>
+                  
+                    <label for="check17" >
+                    <input type="checkbox" id="check17" />
+                       Google Play
+                    </label>
+				</p>
+            </fieldset>
+            </div>	
+            <div>
+            <fieldset>
+			<legend>Synopsis</legend>
+				<p>
+                    <textarea></textarea>
+				</p>
+            </fieldset>
+            </div>									
+				<p>
+					<input type="submit" value="Submit" />
+				</p>
+				
+			</form>
+		</div>
+		
+		<div class="clearfix"></div>
+		<footer>
+			<p>Copyright @copy; 2017, TVFinds, All Rights Reserved</p>
+		</footer>
+</div> <!-- End Grid -->
+</body>
+</html>
+
+

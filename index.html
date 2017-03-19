@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- META -->
+	<title>TvFinds | Welcome</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="" />
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" /> 
+	
+	<!-- Javascript -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/kickstart.js"></script>
+</head>
+<body>
+<div id="container" class="grid">
+	<header>
+		<div class="col_6 column">
+			<h1><a href="index.php"><strong>Tv</strong>Finds</a></h1>
+		</div>
+		<div class="col_6 column right">
+			<form id="add_job_link" action="login.html">
+              <button class="large green"></i>Admin</button>
+			</form>
+		</div>
+	</header>
+	
+	<div class="col_12 column">
+        <!-- Menu Horizontal -->
+		<h5>Search options</h5>
+		<ul class="menu">
+		<li id="name" class="current" onclick="nameButton();"><a><i class="icon-home"></i> Name</a></li>
+		<li id="genre" onclick="genreButton();"><a><i class="icon-desktop"></i> Genre</a></li>
+		<li id="catagories" onclick="catagoriesButton();"><a><i class="icon-user"></i> Categories</a></li>
+		</ul>
+	</div>
+
+
+	<div id="search_area" class="col_12 column">
+			<form class="horizontal" method="post" action="#">
+				<input id="keywords" type="text" placeholder="Search by name..." />
+				 
+				
+				<select id="state_select" style="display: none">
+					<option>Select Genre</option>
+					<option value="Comedy">Comedy</option>
+					<option value="Crime">Crime</option>
+					<option value="Drama/thriller">Drama/thriller</option>
+					<option value="Documentary">Documentary</option>
+					<option value="Drama">Drama</option>
+					<option value="Dramedy">Dramedy</option>
+					<option value="Historical drama">Historical drama</option>
+					<option value="Horror">Horror</option>
+					<option value="Political">Political</option>
+					<option value="Relationship drama">Relationship drama</option>
+					<option value="Retro drama">Retro drama</option>
+					<option value="Sci Fi">Sci Fi</option>
+				</select>
+
+				
+				<select id="category_select" style="display: none">
+				    <option>Select Category</option>
+					<option>Be amused</option>
+					<option>Be comforted</option>
+					<option>Be shocked</option>
+					<option>Experience a bygone era</option>
+					<option>Experience a future world of dimension</option>
+					<option>Experience something sppoky</option>
+					<option>Feel emotionally connected</option>
+					<option>Feel excited</option>
+					<option>Fell intrigued</option>
+					<option>Get to know interesting characters</option>
+                    <option>Laugh my ass off</option>
+                    <option>Live vicariously</option>
+                    <option>Look at great are direction</option>
+                    <option>Stimulate my mind</option>
+				</select>
+				
+				
+				<button type="submit"><i class="icon-search"> </i>Search</button>
+			</form>
+		</div>
+		
+		
+		<div class="col_12 column">
+			<!--<h5>TV Series Listings</h5>-->
+			<ul id="listings">
+				<li>
+					<div class="type">
+						<img src="img/30_rock.jpg"/>
+					</div>
+					<div class="description">
+						<h5>30 Rock</h5>
+						Dealing with life in a studio at NBC's 30 Rockefeller Plaza (the title is a shortening of that), the show centers around Liz Lemon, played by Saturday Night Live's Tina Fey, who's the <a href="details.html"> <i class="icon-plus"></i> Read More</a>
+					</div>
+				</li>
+				<li>
+					<div class="type">
+						<img src="img/A_place_to_call_home.jpg"/>
+					</div>
+					<div class="description">
+						<h5> A Place to Call Home</h5>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt 
+						ut laoreet dolore magna aliquam erat volutpat.<a href="details.html"> <i class="icon-plus"></i> Read More</a>
+					</div>
+				</li>
+				<li>
+					<div class="type">
+						<img src="img/American_horror_story.jpg"/>
+					</div>
+					<div class="description">
+						<h5>American Horror Story</h5>
+						An anthology series that centers on different characters and locations, including a house with a murderous past, an insane asylum, a witch coven, a <a href="details.html"> <i class="icon-plus"></i> Read More</a>
+					</div>
+				</li>
+				<li>
+				    <div class="type">
+						<img src="img/any_human_heart.jpg"/>
+					</div>
+					<div class="description">
+                        <h5>Any Human Heart</h5>
+                        A novelist's life ricochets from 1920s Paris to '50s New York and '80s London. Along the way he meets Ernest Hemingway, Ian Fleming and the Duke and <a href="details.html"> <i class="icon-plus"></i> Read More</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="col_12 column center">
+		<div class="pagination">
+          <a href="#">&laquo;</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">&raquo;</a>
+        </div>
+    </div>
+		
+		<div class="clearfix"></div>
+		<footer>
+			<p>Copyright @copy; 2017, TvFinds, All Rights Reserved</p>
+		</footer>
+</div> <!-- End Grid -->
+</body>
+</html>
+
+<script>
+function genreButton() {
+    document.getElementById("genre").className = "current";
+    document.getElementById("name").className = "";
+    document.getElementById("catagories").className = "";
+    document.getElementById("state_select").style.display = 'inline-block';
+    document.getElementById("keywords").style.display = 'none';
+    document.getElementById("category_select").style.display = 'none';
+    
+}
+function catagoriesButton() {
+    document.getElementById("catagories").className = "current";
+    document.getElementById("name").className = "";
+    document.getElementById("genre").className = "";
+    document.getElementById("category_select").style.display = 'inline-block';
+    document.getElementById("keywords").style.display = 'none';
+    document.getElementById("state_select").style.display = 'none';
+}
+function nameButton() {
+    document.getElementById("name").className = "current";
+    document.getElementById("genre").className = "";
+    document.getElementById("catagories").className = "";
+    document.getElementById("keywords").style.display = 'inline-block';
+    document.getElementById("category_select").style.display = 'none';
+    document.getElementById("state_select").style.display = 'none';
+}
+</script>   
+    
